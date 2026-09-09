@@ -1,0 +1,21 @@
+[project]
+name = "sv-data-engineering-portfolio"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "openai>=3.8.0",
+]
+
+[project.scripts]
+sv-data-engineering-portfolio = "sv_data_engineering_portfolio:main"
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.3.0",
+]
